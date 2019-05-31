@@ -21,7 +21,7 @@
           max-width="48"
           @click="$vuetify.goTo(0)"
         />
-        <v-btn
+        <!--<v-btn
           v-for="(link, i) in links"
           :key="i"
           :to="link.to"
@@ -38,7 +38,7 @@
           hide-details
           solo-inverted
           style="max-width: 300px;"
-        />
+        />-->
       </v-layout>
     </v-container>
   </v-toolbar>

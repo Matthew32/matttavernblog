@@ -5,7 +5,7 @@
     dark
     temporary
   >
-    <v-list>
+    <!--<v-list>
       <v-list-tile
         v-for="(link, i) in links"
         :key="i"
@@ -15,7 +15,7 @@
       >
         <v-list-tile-title v-text="link.text" />
       </v-list-tile>
-    </v-list>
+    </v-list>-->
   </v-navigation-drawer>
 </template>
 

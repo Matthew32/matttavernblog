@@ -1,20 +1,16 @@
 <template>
-  <v-container
-    grid-list-xl
-  >
-    <v-layout wrap>
-      <v-flex xs12>
-        <slot />
-      </v-flex>
-
-      <feed-card
-        v-for="(post,i) in posts"
+  <section id="article">
+    <banner  v-for="(post,i) in post"
         :key="i"
         :size="layout[i]"
         :value="post"
-      />
-    </v-layout>
-  </v-container>
+    ></banner>
+    <content v-for="(post,i) in post"
+        :key="i"
+
+        :size="layout[i]" >{{post.content}}</content>
+
+  </section>
 </template>
 
 <script>
@@ -30,19 +26,21 @@ watch: {
       }
     },
     components: {
-      FeedCard: () => import('@/components/FeedCard')
+      Banner: () => import('@/components/post/Banner'),
+      Content: () => import('@/components/post/Content')
+
     },
 
     data: () => ({
-      posts: [],
+      post: {},
       layout: [2, 2, 1, 2, 2, 3, 3, 3, 3, 3, 3],
       page: 1
     }),
     created() {
-    axios.get(`http://localhost:3007/posts`)
+    axios.get(`http://localhost:3007/posts/${this.$route.params.id}`)
     .then(response => {
       // JSON responses are automatically parsed.
-      this.posts = response.data
+      this.post = response.data
 
     })
     .catch(e => {

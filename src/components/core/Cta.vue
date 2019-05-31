@@ -1,5 +1,5 @@
 <template>
-  <v-btn
+  <!--<v-btn
     fab
     fixed
     bottom
@@ -10,5 +10,5 @@
     rel="noopener"
   >
     <v-icon>mdi-download</v-icon>
-  </v-btn>
+  </v-btn>-->
 </template>

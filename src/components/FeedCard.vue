@@ -7,11 +7,12 @@
       :height="value.prominent ? 450 : 350"
       color="grey lighten-1"
       dark
-      href="#!"
+      :href="`post/${value._id}`"
     >
       <v-img
-        :src="require(`@/assets/articles/${value.hero}`)"
         height="100%"
+
+        :src="require(`@/assets/articles/${value.avatar}`)"
         gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
       >
         <v-layout
@@ -32,11 +33,16 @@
             >
               {{ value.category }}
             </v-chip>
-            <h3 class="title font-weight-bold mb-2">
+            <h2 class="title font-weight-bold mb-2">
               {{ value.title }}
+
+            </h2>
+            <h3>
+                            {{ value.subtitle }}
+
             </h3>
             <div class="caption">
-              {{ value.author }}<br>Date
+              {{ value.author }}<br>{{value.date}}
             </div>
           </v-flex>
           <v-flex align-self-end>
@@ -64,7 +70,7 @@
         required: true
       },
       value: {
-        type: Object,
+
         default: () => ({})
       }
     },
