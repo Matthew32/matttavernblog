@@ -12,7 +12,7 @@
       py-0
     >
       <v-layout>
-        <v-img
+        <a href="/"><v-img
           :src="require('@/assets/logo.png')"
           class="mr-5"
           contain
@@ -20,7 +20,7 @@
           width="48"
           max-width="48"
           @click="$vuetify.goTo(0)"
-        />
+        /></a>
         <!--<v-btn
           v-for="(link, i) in links"
           :key="i"

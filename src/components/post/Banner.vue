@@ -2,9 +2,9 @@
   <base-card   dark >
     <v-img
       class="grey lighten-2"
-      height="400px"
+      height="250px"
       width="100%"
-      :src="require(`@/assets/articles/${value.avatar}`)"
+      :src="value.avatar"
 
     >
       <v-layout
@@ -24,13 +24,13 @@
           <div class="subheading text-uppercase pl-2 mb-4">
             {{value.subtitle}}
           </div>
-          <v-btn
+          <!--<v-btn
             color="primary"
             depressed
             round
           >
              Subscribe
-          </v-btn>
+          </v-btn>-->
         </v-flex>
       </v-layout>
     </v-img>

@@ -23,13 +23,13 @@
           <div class="subheading text-uppercase pl-2 mb-4">
             Finding Beauty, On the free time
           </div>
-          <v-btn
+          <!--<v-btn
             color="primary"
             depressed
             round
           >
             Subscribe
-          </v-btn>
+          </v-btn>-->
         </v-flex>
       </v-layout>
     </v-img>

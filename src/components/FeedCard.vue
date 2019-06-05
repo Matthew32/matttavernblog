@@ -12,7 +12,7 @@
       <v-img
         height="100%"
 
-        :src="require(`@/assets/articles/${value.avatar}`)"
+        :src="value.avatar"
         gradient="rgba(0, 0, 0, .42), rgba(0, 0, 0, .42)"
       >
         <v-layout
@@ -23,7 +23,7 @@
           ma-0
         >
           <v-flex xs12>
-            <v-chip
+            <!--<v-chip
               label
               class="mx-0 mb-2 text-uppercase"
               color="grey darken-3"
@@ -32,7 +32,7 @@
               @click.stop=""
             >
               {{ value.category }}
-            </v-chip>
+            </v-chip>-->
             <h2 class="title font-weight-bold mb-2">
               {{ value.title }}
 
@@ -42,7 +42,7 @@
 
             </h3>
             <div class="caption">
-              {{ value.author }}<br>{{value.date}}
+              {{ value.user.username }}<br>{{value.date}}
             </div>
           </v-flex>
           <v-flex align-self-end>
