@@ -1,8 +1,9 @@
 <template>
   <div id="post">
-    <articles>
-      <banner />
-    </articles>
+    <items>
+
+    </items>
+      <content />
 
     <!-- <about /> -->
   </div>
@@ -13,8 +14,9 @@ import { mapState, mapActions } from 'vuex';
   export default {
     name: 'Post',
    components: {
-      Articles: () => import('@/components/post/Article'),
-      Banner: () => import('@/components/post/Banner'),
+      Items: () => import('@/components/post/Item'),
+
+
     }
   }
 
