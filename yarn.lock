@@ -3221,9 +3221,9 @@ decamelize@^2.0.0:
     xregexp "4.0.0"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -6554,10 +6554,10 @@ lodash.assign@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
   integrity sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
 
-lodash.clonedeep@^4.3.2, lodash.clonedeep@^4.5.0:
+lodash.clonedeep@^4.3.2, lodash.clonedeep@^4.5, lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-  integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+  integrity sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==
 
 lodash.debounce@^4.0.8:
   version "4.0.8"
@@ -10348,6 +10348,13 @@ vuetify@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.5.1.tgz#422e0ec31c080494446559bfcf0b0ba0c749f74e"
   integrity sha512-f/9al/DZzUEk5YWNaF/AMRZEQViSBjIqx/fRz6DF397O/rCOZt1VnjmqHqQizioiWy6M2zWVbrUvx4pCfQK3Ig==
+
+vuex-rest-api@^2.10.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/vuex-rest-api/-/vuex-rest-api-2.15.0.tgz#441ba738d804ea3446995b8fa65148cc44c938e2"
+  integrity sha512-meyMDaq+qz4YvGLHEJxCSVT3zYnJKSsJjAe0KLpd1GkWlhQ1lPB9+PWp3HgySldjUY5+2kvhpLwyw88n2LASNw==
+  dependencies:
+    lodash.clonedeep "^4.5"
 
 vuex@^3.0.1:
   version "3.1.0"
